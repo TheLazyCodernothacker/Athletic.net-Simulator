@@ -1,8 +1,9 @@
 import puppeteer from 'puppeteer';
 import { json } from '@sveltejs/kit';
+import { chromium } from 'playwright';
 
 export async function GET({ params }) {
-	const browser = await puppeteer.launch();
+	const browser = await chromium.launch();
 	const page = await browser.newPage();
 	const url = params.url;
 	try {
