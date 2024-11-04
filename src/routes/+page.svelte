@@ -21,7 +21,7 @@
 		/>
 
 		<button
-			on:click={() => {
+			onclick={() => {
 				window.location = `/race/${url.replaceAll('/', '*')}/`;
 			}}
 			class="w-full rounded-lg bg-blue-500 px-4 py-2 font-semibold text-white transition-colors hover:bg-blue-600"
